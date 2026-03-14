@@ -2,8 +2,8 @@ import Link from "next/link"
 
 function Header() {
     return (
-        <header>
-            <Link href="/" className="flex flex-col text-2xl font-bold uppercase leading-none">
+        <header className="bg-indigo-400">
+            <Link href="/" className="flex flex-col text-2xl font-bold uppercase leading-none bg-inherit">
                 <span>TOM</span>
                 <span>ROBINSON</span>
             </Link>
