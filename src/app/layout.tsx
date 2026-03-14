@@ -28,23 +28,18 @@ export default function RootLayout({
     <html lang="en">
       <body className="antialiased h-screen overflow-hidden">
 
-        <div className="flex h-full">
+        {/* Main column */}
+        <div className="flex flex-col flex-1 bg-indigo-400 p-2 px-4">
 
-          {/* Sidebar */}
+          <Header />
           <SideBar />
 
-          {/* Main column */}
-          <div className="flex flex-col flex-1">
-
-            <Header />
-
-            <main className="flex-1 overflow-y-auto">
-              {children}
-            </main>
-
-          </div>
+          <main className="flex-1 overflow-y-auto">
+            {children}
+          </main>
 
         </div>
+
 
       </body>
     </html>
