@@ -23,12 +23,14 @@ function SideBar() {
         {titleText}
       </div>
       <nav>
-        <ul className="flex flex-col gap-1s text-lg font-bold bg-indigo-700 p-2 py-3">
+        <ul className="flex flex-col text-lg font-bold bg-indigo-700 p-2 py-3">
           {topLinks.map((link) => (
             <li key={link.id}>
               <Link
                 href={link.href}
-                className="hover:text-red-500 hover:underline transition"
+                onMouseEnter={() => setPreviewImage(link.image)}
+                onMouseLeave={() => setPreviewImage(null)}
+                className="hover:text-indigo-300 transition"
               >
                 {link.name}
               </Link>
@@ -37,14 +39,14 @@ function SideBar() {
         </ul>
       </nav>
       <nav className="h-full">
-        <ul className="flex flex-col gap-1 text-lg font-bold p-2 bg-black/20 h-full">
+        <ul className="flex flex-col text-lg font-bold p-2 bg-black/20 h-full">
           {bottomLinks.map((link) => (
             <li key={link.id}>
               <Link
                 href={link.href}
                 onMouseEnter={() => setPreviewImage(link.image)}
                 onMouseLeave={() => setPreviewImage(null)}
-                className="hover:text-red-500 hover:underline transition"
+                className="hover:text-indigo-300 transition"
               >
                 {link.name}
               </Link>

@@ -18,18 +18,18 @@ export default function BurgerMenu() {
         className="flex flex-col justify-center items-center m-2 w-10 h-10 rounded focus:outline-none overflow-visible"
       >
         <span
-          className={`block h-0.5 w-8 my-1 bg-black transition-transform duration-300 origin-center ${
-            isOpen ? "rotate-45 translate-y-2.5" : ""
+          className={`block h-1 w-10 my-1 bg-black transition-transform duration-300 origin-center ${
+            isOpen ? "rotate-45 translate-y-3" : ""
           }`}
         />
         <span
-          className={`block h-0.5 w-8 my-1 bg-black transition-opacity duration-300 ${
+          className={`block h-1 w-10 my-1 bg-black transition-opacity duration-300 ${
             isOpen ? "opacity-0" : ""
           }`}
         />
         <span
-          className={`block h-0.5 w-8 my-1 bg-black transition-transform duration-300 origin-center ${
-            isOpen ? "-rotate-45 -translate-y-2.5" : ""
+          className={`block h-1 w-10 my-1 bg-black transition-transform duration-300 origin-center ${
+            isOpen ? "-rotate-45 -translate-y-3" : ""
           }`}
         />
       </button>
@@ -46,7 +46,7 @@ export default function BurgerMenu() {
                     <Link
                       href={link.href}
                       onClick={() => setIsOpen(false)}
-                      className="block px-4 py-2 rounded hover:bg-indigo-800 transition text-white font-bold"
+                      className="block px-4 py-2 rounded hover:text-indigo-300 transition text-white font-bold"
                     >
                       {link.name}
                     </Link>
@@ -60,7 +60,7 @@ export default function BurgerMenu() {
                     <Link
                       href={link.href}
                       onClick={() => setIsOpen(false)}
-                      className="block px-4 py-2 rounded hover:bg-indigo-800 transition text-white font-bold"
+                      className="block px-4 py-2 rounded hover:text-indigo-300 transition text-white font-bold"
                     >
                       {link.name}
                     </Link>

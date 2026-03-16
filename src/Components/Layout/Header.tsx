@@ -17,7 +17,7 @@ function Header() {
 
   return (
     <header className="bg-indigo-400 flex border-b-8">
-      <div className="relative hidden md:block w-70 h-24">
+      <div className="relative hidden md:block w-70 shrink-0 h-24">
         {image ? (
           <Image
             src={image}
