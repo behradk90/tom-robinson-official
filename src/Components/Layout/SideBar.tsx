@@ -17,7 +17,7 @@ function SideBar() {
     const bottomLinks = SideBarOptions.slice(4)
 
     return (
-        <aside className="w-70 shrink-0 h-screen bg-indigo-400 text-white py-2 space-y-2">
+        <aside className="w-70 hidden md:block shrink-0 h-screen bg-indigo-400 text-white py-2 space-y-2">
             {/* <div className="h-40"></div> */}
             <div className="text-xl flex font-bold bg-indigo-950 p-2 h-24 items-center">
                 {titleText}

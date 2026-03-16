@@ -9,7 +9,7 @@ function Blurb() {
     const activeRoute = SideBarOptions.find((r) => r.href === pathname)
     const blurb = activeRoute?.blurb
     return (
-      <div className="flex items-center text-md w-full p-2 bg-indigo-950 h-24">
+      <div className="flex items-center text-sm md:text-md w-full p-2 bg-indigo-950 md:h-24">
   {blurb}
 </div>
     )

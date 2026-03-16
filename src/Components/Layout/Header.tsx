@@ -15,7 +15,7 @@ function Header() {
     const image = previewImage || activeRoute?.image
     return (
         <header className="bg-indigo-400 flex border-b-8">
-            <div className="relative w-70 h-24">
+            <div className="relative hidden md:block w-70 h-24">
                 {image ? (
                     <Image
                         src={image}
@@ -34,15 +34,16 @@ function Header() {
                 )}
             </div>
 
-            <Link href="/" className="flex flex-col text-2xl font-bold uppercase leading-nones pb-2">
-                <Image
-                    src="/TomRobinsonLogo.svg"
-                    alt="Tom Robinson"
-                    width={320}
-                    height={200}
-                    priority
-                />
-            </Link>
+         <Link href="/" className="flex flex-col text-2xl font-bold uppercase leading-none pb-2">
+  <Image
+    src="/TomRobinsonLogo.svg"
+    alt="Tom Robinson"
+    width={320}          // base width
+    height={200}         // base height
+    className="w-60 md:w-[320px] h-auto" 
+    priority
+  />
+</Link>
         </header>
     )
 }

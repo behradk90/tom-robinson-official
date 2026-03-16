@@ -39,7 +39,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <div className="flex flex-1 overflow-hidden">
 
                 <SideBar />
-                <div className="m-2 mr-0 w-full">
+                <div className="my-2 md:m-2 mr-0 w-full">
                   <Blurb/>
                   <main className="flex-1 overflow-y-auto">
                     {children}
