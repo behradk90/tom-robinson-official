@@ -24,19 +24,25 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className="antialiased h-screen overflow-hidden">
+      <body className="antialiased h-screen overflow-hidden bg-indigo-400">
 
         <NavPreviewProvider>
-          <div className="flex flex-col flex-1 bg-indigo-400 p-2 2xl:px-96">
 
-            <Header />
-            <SideBar />
+          <div className="h-full flex justify-center bg-indigo-400">
 
-            <main className="flex-1 overflow-y-auto">
-              {children}
-            </main>
+            <div className="flex flex-col w-full max-w-6xl p-2">
+
+              <Header />
+              <SideBar />
+
+              <main className="flex-1 overflow-y-auto">
+                {children}
+              </main>
+
+            </div>
 
           </div>
+
         </NavPreviewProvider>
 
       </body>

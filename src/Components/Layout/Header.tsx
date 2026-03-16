@@ -13,17 +13,24 @@ function Header() {
     const activeRoute = SideBarOptions.find((r) => r.href === pathname)
 
     const image = previewImage || activeRoute?.image
-    console.log(image)
     return (
         <header className="bg-indigo-400 flex border-b-8">
             <div className="relative w-70 h-24">
-                {image && (
+                {image ? (
                     <Image
                         src={image}
                         alt="Route image"
                         fill
                         className="object-cover transition-opacity duration-500"
                     />
+                ) : (
+                    <Image
+                        src="/mast.jpg"
+                        alt="Route image"
+                        fill
+                        className="object-cover transition-opacity duration-500"
+                    />
+
                 )}
             </div>
 
