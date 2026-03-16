@@ -11,15 +11,15 @@ function SideBar() {
     const pathname = usePathname()
 
     const activeRoute = SideBarOptions.find((r) => r.href === pathname)
-    const titleText = activeRoute?.name || "Main Index"
+    const titleText = activeRoute?.name
 
-    const topLinks = SideBarOptions.slice(0, 3)
-    const bottomLinks = SideBarOptions.slice(3)
+    const topLinks = SideBarOptions.slice(1, 4)
+    const bottomLinks = SideBarOptions.slice(4)
 
     return (
-        <aside className="w-70 h-screen bg-indigo-400 text-white py-2 space-y-2">
+        <aside className="w-70 shrink-0 h-screen bg-indigo-400 text-white py-2 space-y-2">
             {/* <div className="h-40"></div> */}
-            <div className="text-xl font-bold bg-indigo-950 p-2 py-8">
+            <div className="text-xl flex font-bold bg-indigo-950 p-2 h-24 items-center">
                 {titleText}
             </div>
             <nav><ul className="flex flex-col gap-1s text-lg font-bold bg-indigo-700 p-2 py-3">
@@ -28,8 +28,6 @@ function SideBar() {
                         <li key={link.id}>
                             <Link
                                 href={link.href}
-                                onMouseEnter={() => setPreviewImage(link.image)}
-                                onMouseLeave={() => setPreviewImage(null)}
                                 className="hover:text-red-500 hover:underline transition"
                             >
                                 {link.name}

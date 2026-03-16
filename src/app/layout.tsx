@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "@/Components/Layout/Header"
 import SideBar from "@/Components/Layout/SideBar"
 import { NavPreviewProvider } from "@/context/NavPreviewContext"
+import Blurb from "@/Components/Layout/Blurb";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -30,14 +31,22 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
           <div className="h-full flex justify-center bg-indigo-400">
 
-            <div className="flex flex-col w-full max-w-6xl p-2">
+            <div className="flex h-full flex-col w-full max-w-6xl p-2">
 
               <Header />
-              <SideBar />
 
-              <main className="flex-1 overflow-y-auto">
-                {children}
-              </main>
+              {/* Sidebar + Main row */}
+              <div className="flex flex-1 overflow-hidden">
+
+                <SideBar />
+                <div className="m-2 mr-0 w-full">
+                  <Blurb/>
+                  <main className="flex-1 overflow-y-auto">
+                    {children}
+                  </main>
+                </div>
+
+              </div>
 
             </div>
 
