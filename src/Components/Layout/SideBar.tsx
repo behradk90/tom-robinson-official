@@ -1,7 +1,11 @@
+"use client"
+
 import Link from "next/link"
 import { SideBarOptions } from "./Utils/SideBarOptions"
+import { useNavPreview } from "@/context/NavPreviewContext"
 
 function SideBar() {
+    const { setPreviewImage } = useNavPreview()
     return (
         <aside className="w-70 h-screen bg-indigo-400 text-white py-2 space-y-2">
             {/* <div className="h-40"></div> */}
@@ -20,6 +24,8 @@ function SideBar() {
                             <li key={link.id}>
                                 <Link
                                     href={link.href}
+                                    onMouseEnter={() => setPreviewImage(link.image)}
+                                    onMouseLeave={() => setPreviewImage(null)}
                                     className="hover:text-red-500 hover:underline transition"
                                 >
                                     {link.name}
