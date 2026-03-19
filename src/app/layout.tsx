@@ -24,7 +24,7 @@ export default function RootLayout({
               <Header />
 
               {/* Sidebar + Main row */}
-              <div className="flex flex-1 overflow-hidden min-h-0">
+              <div className="flex flex-1 overflow-hidden min-h-0 border-b-8">
                 <SideBar />
                 <div className="my-2 md:m-2 md:mr-0 w-full flex flex-col min-h-0">
                   <Blurb />

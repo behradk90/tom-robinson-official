@@ -23,7 +23,7 @@ function SideBar() {
         {titleText}
       </div>
       <nav>
-        <ul className="flex flex-col text-lg font-bold bg-indigo-700 p-2 py-3">
+        <ul className="flex flex-col text-lg font-bold bg-indigo-700 p-2 py-1.5">
           {topLinks.map((link) => (
             <li key={link.id}>
               <Link
