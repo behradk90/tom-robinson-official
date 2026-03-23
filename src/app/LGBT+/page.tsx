@@ -2,18 +2,17 @@ import Image from "next/image";
 
 export default function page() {
   return (
-    <div className="py-2 space-y-2 text-white">
-      <div className="flex space-x-2">
-        <a
-          href=""
-          className="relative w-60 h-52 shrink-0 border hover:border-red-500"
-        >
-          <Image
-            src="/LGBT+/gaynews552.jpg"
-            alt="Route image"
-            fill
-            className="object-cover transition-opacity duration-500"
-          />
+    <div className="space-y-2 text-white">
+      <div className="md:flex space-x-2">
+        <a href="">
+          <div className="relative w-60 h-52 shrink-0 border hover:border-red-500">
+            <Image
+              src="/LGBT+/gaynews552.jpg"
+              alt="Route image"
+              fill
+              className="object-cover transition-opacity duration-500"
+            />
+          </div>
         </a>
         <div className="p-2 border rounded-xs">
           Sing If You're Glad To Be Gay was performed by the Tom Robinson Band
@@ -33,7 +32,7 @@ export default function page() {
           Rock Against Racism, Amnesty and other progressive causes.
         </div>
       </div>
-      <div className="flex space-x-2">
+      <div className="md:flex space-x-2">
         <div className="relative w-60 h-52 shrink-0 border">
           <Image
             src="/LGBT+/furmfam126.jpg"
@@ -68,17 +67,16 @@ export default function page() {
           period in tabloid hell ensued.
         </div>
       </div>
-      <div className="flex space-x-2">
-        <a
-          href=""
-          className="relative w-60 h-52 shrink-0 border hover:border-red-500"
-        >
-          <Image
-            src="/LGBT+/outrage552.jpg"
-            alt="Route image"
-            fill
-            className="object-cover transition-opacity duration-500"
-          />
+      <div className="md:flex space-x-2">
+        <a href="">
+          <div className="relative w-60 h-52 shrink-0 border hover:border-red-500">
+            <Image
+              src="/LGBT+/outrage552.jpg"
+              alt="Route image"
+              fill
+              className="object-cover transition-opacity duration-500"
+            />
+          </div>
         </a>
         <div className="p-2 border rounded-xs">
           From{" "}

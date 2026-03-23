@@ -40,7 +40,7 @@ function Header() {
           className="flex flex-col text-2xl font-bold uppercase leading-none pb-2"
         >
           <Image
-            src="/TomRobinsonLogo.svg"
+            src="/TRLOGOwhite.png"
             alt="Tom Robinson"
             width={320} // base width
             height={200} // base height

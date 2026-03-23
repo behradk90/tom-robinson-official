@@ -26,7 +26,7 @@ const images = [
 
 export default function page() {
   return (
-    <div className="grid grid-cols-2 md:grid-cols-3 gap-4 py-2">
+    <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
       {images.map((src, i) => (
         <div key={i} className="relative w-full h-64">
           <Image src={src} alt={`Photo ${i}`} fill className="object-cover" />

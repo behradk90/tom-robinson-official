@@ -18,17 +18,17 @@ export default function BurgerMenu() {
         className="flex flex-col justify-center items-center m-2 w-10 h-10 rounded focus:outline-none overflow-visible"
       >
         <span
-          className={`block h-1 w-10 my-1 bg-black transition-transform duration-300 origin-center ${
+          className={`block h-1 w-10 my-1 bg-white transition-transform duration-300 origin-center ${
             isOpen ? "rotate-45 translate-y-3" : ""
           }`}
         />
         <span
-          className={`block h-1 w-10 my-1 bg-black transition-opacity duration-300 ${
+          className={`block h-1 w-10 my-1 bg-white transition-opacity duration-300 ${
             isOpen ? "opacity-0" : ""
           }`}
         />
         <span
-          className={`block h-1 w-10 my-1 bg-black transition-transform duration-300 origin-center ${
+          className={`block h-1 w-10 my-1 bg-white transition-transform duration-300 origin-center ${
             isOpen ? "-rotate-45 -translate-y-3" : ""
           }`}
         />
@@ -37,7 +37,7 @@ export default function BurgerMenu() {
       {/* Menu overlay */}
       {isOpen && (
         <>
-          <div className="bg-black-100 opacity-40" />
+          <div className="bg-black-100 opacity-60" />
           <div className="fixed inset-0 bg-black/70 z-40 flex justify-start m-3 mt-4 top-24">
             <div className="w-full h-full divide-y-2 p-4 space-y-2 shadow-lg overflow-auto">
               <ul className="flex flex-col space-y-0.5">

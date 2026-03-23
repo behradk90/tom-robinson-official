@@ -1,6 +1,6 @@
 export default function About() {
   return (
-    <div className="p-2 text-white">
+    <div className="text-white">
       Born June 1st 1950 in Cambridge, Tom Robinson was a choirboy until his
       voice broke, and everything else broke along with it. At a time when
       homosexuality was still punishable in Britain by prison, he fell in love
