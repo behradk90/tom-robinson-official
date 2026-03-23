@@ -3,28 +3,32 @@ import Image from "next/image";
 export default function page() {
   return (
     <div className="space-y-2 text-white">
-      <div className="md:flex space-x-2">
-        <a href="">
+      <div className="md:flex md:space-x-2 space-y-2 md:space-y-0 w-full">
+        {/* Image wrapper */}
+        <div className="flex justify-center md:block">
           <div className="relative w-60 h-52 shrink-0 border hover:border-red-500">
-            <Image
-              src="/LGBT+/gaynews552.jpg"
-              alt="Route image"
-              fill
-              className="object-cover transition-opacity duration-500"
-            />
+            <a href="">
+              <Image
+                src="/LGBT+/gaynews552.jpg"
+                alt="Route image"
+                fill
+                className="object-cover transition-opacity duration-500"
+              />
+            </a>
           </div>
-        </a>
+        </div>
+
+        {/* Text */}
         <div className="p-2 border rounded-xs">
           Sing If You're Glad To Be Gay was performed by the Tom Robinson Band
           and released on a live EP called Rising Free in early 1978. It reached
           No.18 in the UK charts despite an unofficial ban on the song by the
           BBC - John Peel was the only Radio 1 DJ who ever played it at the
-          time. Click here for an MP3 extract from this version,{" "}
+          time. Click here for an MP3 extract from this version,
           <a
             href="/records/albums/pitd.htm#gtbg"
             className="ml-1 font-semibold text-red-900 hover:text-red-500"
           >
-            {" "}
             click here{" "}
           </a>
           for the lyrics. Danny, Dolphin and Mark - were not gay, but we all
@@ -32,15 +36,19 @@ export default function page() {
           Rock Against Racism, Amnesty and other progressive causes.
         </div>
       </div>
-      <div className="md:flex space-x-2">
-        <div className="relative w-60 h-52 shrink-0 border">
-          <Image
-            src="/LGBT+/furmfam126.jpg"
-            alt="Route image"
-            fill
-            className="object-cover transition-opacity duration-500"
-          />
+      <div className="md:flex md:space-x-2 space-y-2 md:space-y-0 w-full">
+        {/* Image wrapper */}
+        <div className="flex justify-center md:block">
+          <div className="relative w-60 h-52 shrink-0 border hover:border-red-500">
+            <Image
+              src="/LGBT+/furmfam126.jpg"
+              alt="Route image"
+              fill
+              className="object-cover transition-opacity duration-500"
+            />
+          </div>
         </div>
+
         <div className="p-2 border rounded-xs">
           After Glad To Be Gay was a hit, the one thing people thought they knew
           about me - if they'd heard of Tom Robinson at all - was that I was
@@ -67,17 +75,20 @@ export default function page() {
           period in tabloid hell ensued.
         </div>
       </div>
-      <div className="md:flex space-x-2">
-        <a href="">
+      <div className="md:flex md:space-x-2 space-y-2 md:space-y-0 w-full">
+        {/* Image wrapper */}
+        <div className="flex justify-center md:block">
           <div className="relative w-60 h-52 shrink-0 border hover:border-red-500">
-            <Image
-              src="/LGBT+/outrage552.jpg"
-              alt="Route image"
-              fill
-              className="object-cover transition-opacity duration-500"
-            />
+            <a href="">
+              <Image
+                src="/LGBT+/outrage552.jpg"
+                alt="Route image"
+                fill
+                className="object-cover transition-opacity duration-500"
+              />
+            </a>
           </div>
-        </a>
+        </div>
         <div className="p-2 border rounded-xs">
           From{" "}
           <a
@@ -86,9 +97,9 @@ export default function page() {
             className="ml-1 font-semibold text-red-900 hover:text-red-500"
           >
             {" "}
-            Peter Tatchell's website:{" "}
-          </a>{" "}
-          "In the 1970s and '80s, Tom Robinson was one of the most famous gay
+            Peter Tatchell's website
+          </a>
+          : "In the 1970s and '80s, Tom Robinson was one of the most famous gay
           men in Britain. His hit song "Glad To Be Gay" was, for over a decade,
           the de facto gay national anthem. Then Tom fell in love with Sue
           Brearley! ...Tom Robinson has behaved rather commendably, in my view.
