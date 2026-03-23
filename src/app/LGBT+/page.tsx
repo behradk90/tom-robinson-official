@@ -4,23 +4,33 @@ export default function page() {
   return (
     <div className="py-2 space-y-2 text-white">
       <div className="flex space-x-2">
-        <div className="relative w-60 h-52 shrink-0 border hover:border-red-500">
+        <a
+          href=""
+          className="relative w-60 h-52 shrink-0 border hover:border-red-500"
+        >
           <Image
             src="/LGBT+/gaynews552.jpg"
             alt="Route image"
             fill
             className="object-cover transition-opacity duration-500"
           />
-        </div>
+        </a>
         <div className="p-2 border rounded-xs">
           Sing If You're Glad To Be Gay was performed by the Tom Robinson Band
           and released on a live EP called Rising Free in early 1978. It reached
           No.18 in the UK charts despite an unofficial ban on the song by the
           BBC - John Peel was the only Radio 1 DJ who ever played it at the
-          time. Click here for an MP3 extract from this version, click here for
-          the lyrics. Danny, Dolphin and Mark - were not gay, but we all played
-          at gigs and rallies in support of gay equality as well as for Rock
-          Against Racism, Amnesty and other progressive causes.
+          time. Click here for an MP3 extract from this version,{" "}
+          <a
+            href="/records/albums/pitd.htm#gtbg"
+            className="ml-1 font-semibold text-red-900 hover:text-red-500"
+          >
+            {" "}
+            click here{" "}
+          </a>
+          for the lyrics. Danny, Dolphin and Mark - were not gay, but we all
+          played at gigs and rallies in support of gay equality as well as for
+          Rock Against Racism, Amnesty and other progressive causes.
         </div>
       </div>
       <div className="flex space-x-2">
@@ -59,14 +69,17 @@ export default function page() {
         </div>
       </div>
       <div className="flex space-x-2">
-        <div className="relative w-60 h-52 shrink-0 border hover:border-red-500">
+        <a
+          href=""
+          className="relative w-60 h-52 shrink-0 border hover:border-red-500"
+        >
           <Image
             src="/LGBT+/outrage552.jpg"
             alt="Route image"
             fill
             className="object-cover transition-opacity duration-500"
           />
-        </div>
+        </a>
         <div className="p-2 border rounded-xs">
           From{" "}
           <a
