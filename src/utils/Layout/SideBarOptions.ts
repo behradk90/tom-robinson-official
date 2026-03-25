@@ -63,7 +63,8 @@ export const SideBarOptions = [
     name: "Gigs",
     href: "/gigs",
     image: "/mast.jpg",
-    blurb: "Placeholder",
+    blurb:
+      "'Then & Now' acoustic tour with Adam Phillips extended into 2026 through popular demand...",
   },
   {
     id: 9,

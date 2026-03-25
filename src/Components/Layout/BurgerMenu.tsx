@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { SideBarOptions } from "./Utils/SideBarOptions";
+import { SideBarOptions } from "../../utils/Layout/SideBarOptions";
 
 export default function BurgerMenu() {
   const [isOpen, setIsOpen] = useState(false);

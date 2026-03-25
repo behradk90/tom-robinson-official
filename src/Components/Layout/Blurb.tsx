@@ -1,7 +1,7 @@
 "use client";
 
 import { usePathname } from "next/navigation";
-import { SideBarOptions } from "./Utils/SideBarOptions";
+import { SideBarOptions } from "../../utils/Layout/SideBarOptions";
 
 function Blurb() {
   const pathname = usePathname();

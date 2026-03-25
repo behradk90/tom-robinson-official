@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { SideBarOptions } from "./Utils/SideBarOptions";
+import { SideBarOptions } from "../../utils/Layout/SideBarOptions";
 import { useNavPreview } from "@/context/NavPreviewContext";
 import { usePathname } from "next/navigation";
 

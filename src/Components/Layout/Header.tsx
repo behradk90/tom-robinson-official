@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useNavPreview } from "@/context/NavPreviewContext";
-import { SideBarOptions } from "./Utils/SideBarOptions";
+import { SideBarOptions } from "../../utils/Layout/SideBarOptions";
 import BurgerMenu from "./BurgerMenu";
 
 function Header() {
