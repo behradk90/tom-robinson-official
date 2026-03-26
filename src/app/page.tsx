@@ -31,7 +31,7 @@ const sections = [
 
 export default function Home() {
   return (
-    <div className="my-2 w-full grid md:grid-cols-2 lg:grid-cols-3 gap-2">
+    <div className="w-full grid md:grid-cols-2 lg:grid-cols-3 gap-2">
       {sections.map((section) => (
         <div key={section.id} className="flex flex-col gap-2 h-full">
           {/* Image (fixed height) */}
