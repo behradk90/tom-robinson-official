@@ -28,7 +28,7 @@ export default function RootLayout({
                 <SideBar />
                 <div className="my-2 md:m-2 md:mr-0 w-full flex flex-col min-h-0 space-y-2">
                   <Blurb />
-                  <main className="flex-1 overflow-y-auto">{children}</main>
+                  <main className="flex-1  overflow-y-auto">{children}</main>
                 </div>
               </div>
             </div>
