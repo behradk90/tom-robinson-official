@@ -97,7 +97,7 @@ export const SideBarOptions = [
   {
     id: 13,
     name: "Contact",
-    href: "/contact",
+    href: "/Contact",
     image: "/butcont.jpg",
     blurb:
       "Use this page to receive - or stop receiving Tom's email newsletters. We will never pass on your address to a third party",
