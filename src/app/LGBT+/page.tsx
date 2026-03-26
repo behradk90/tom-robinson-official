@@ -39,7 +39,7 @@ export default function page() {
       <div className="md:flex md:space-x-2 space-y-2 md:space-y-0 w-full">
         {/* Image wrapper */}
         <div className="flex justify-center md:block">
-          <div className="relative w-60 h-52 shrink-0 border hover:border-red-500">
+          <div className="relative w-60 h-52 shrink-0 border">
             <Image
               src="/LGBT+/furmfam126.jpg"
               alt="Route image"
